@@ -3,12 +3,24 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "files": [
+    "index.js",
+    "esnext.js"
+  ],
+  "engines": {
+    "node": ">= 10"
+  },
   "scripts": {
-    "find-new-rules:main": "eslint-find-rules --unused ./index.js"
+    "prelint": "eclint check *",
+    "lint": "eslint --report-unused-disable-directives .",
+    "find-new-rules": "eslint-find-rules -c -u ./index.js -n"
   },
   "devDependencies": {
+    "eclint": "^2.8.1",
     "eslint": "^5.16.0",
-    "eslint-find-rules": "^3.5.0"
+    "eslint-find-rules": "^3.5.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0"
   },
   "peerDependencies": {
     "eslint": ">=5.16.0"
