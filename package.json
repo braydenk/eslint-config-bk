@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "find-new-rules:main": "eslint-find-rules --unused ./index.js"
+  },
   "devDependencies": {
-    "eslint": "^5.16.0"
+    "eslint": "^5.16.0",
+    "eslint-find-rules": "^3.5.0"
   },
   "peerDependencies": {
     "eslint": ">=5.16.0"

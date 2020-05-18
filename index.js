@@ -10,17 +10,16 @@ module.exports = {
     },
   },
   env: {
-    es2020: true,
     node: true,
     browser: true,
     jest: true,
   },
-  extends: ['prettier'],
+  // extends: ['prettier'],
   rules: {
     // Possible Errors
     'for-direction': 'error',
-    'getter-return': '',
-    'no-async-promise-executor': '',
+    'getter-return': 'error',
+    'no-async-promise-executor': 'error',
     'no-await-in-loop': 'off',
     'no-compare-neg-zero': 'error',
     'no-cond-assign': ['error', 'always'],
@@ -80,69 +79,69 @@ module.exports = {
       },
     ],
     'consistent-return': 'off',
-    // curly:
-    // default-case:
-    // default-case-last
-    // default-param-last
-    // dot-location:
-    // dot-notation:
+    curly: 'error',
+    'default-case': 'error',
+    'default-case-last': 'error',
+    'default-param-last': 'error',
+    'dot-location': 'error',
+    'dot-notation': 'error',
     eqeqeq: ['error', 'always'],
-    // grouped-accessor-pairs
-    // guard-for-in:
-    // max-classes-per-file
+    'grouped-accessor-pairs': 'error',
+    'guard-for-in': 'error',
+    'max-classes-per-file': 'error',
     'no-alert': 'off',
-    // no-caller:
-    // no-case-declarations:
-    // no-constructor-return
-    // no-div-regex:
-    // no-else-return:
-    // no-empty-function:
-    // no-empty-pattern:
-    // no-eq-null:
-    // no-eval:
-    // no-extend-native:
-    // no-extra-bind:
-    // no-extra-label:
-    // no-fallthrough:
-    // no-floating-decimal:
-    // no-implicit-coercion:
-    // no-implicit-globals:
-    // no-implied-eval:
-    // no-invalid-this:
-    // no-iterator:
-    // no-labels:
-    // no-lone-blocks:
-    // no-loop-func:
-    // no-magic-numbers:
-    // no-multi-spaces:
-    // no-multi-str:
-    // no-native-reassign:
-    // no-new:
-    // no-new-func:
-    // no-new-wrappers:
-    // no-octal:
-    // no-octal-escape:
-    // no-param-reassign:
-    // no-proto:
-    // no-redeclare:
+    ' no-caller': 'error',
+    'no-case-declarations': 'error',
+    'no-constructor-return': 'error',
+    'no-div-regex': 'error',
+    'no-else-return': 'error',
+    'no-empty-function': 'error',
+    'no-empty-pattern': 'error',
+    'no-eq-null': 'error',
+    'no-eval': 'error',
+    'no-extend-native': 'error',
+    'no-extra-bind': 'error',
+    'no-extra-label': 'error',
+    'no-fallthrough': 'error',
+    'no-floating-decimal': 'error',
+    'no-implicit-coercion': 'error',
+    'no-implicit-globals': 'error',
+    'no-implied-eval': 'error',
+    'no-invalid-this': 'error',
+    'no-iterator': 'error',
+    'no-labels': 'error',
+    'no-lone-blocks': 'error',
+    'no-loop-func': 'error',
+    'no-magic-numbers': 'error',
+    'no-multi-spaces': 'error',
+    'no-multi-str': 'error',
+    'no-native-reassign': 'error',
+    'no-new': 'error',
+    'no-new-func': 'error',
+    'no-new-wrappers': 'error',
+    'no-octal': 'error',
+    'no-octal-escape': 'error',
+    'no-param-reassign': 'error',
+    'no-proto': 'error',
+    'no-redeclare': 'error',
     'no-return-assign': ['error', 'except-parens'],
-    // no-script-url:
-    // no-self-assign:
-    // no-self-compare:
-    // no-sequences:
-    // no-throw-literal:
-    // no-unmodified-loop-condition:
-    // no-unused-expressions:
-    // no-unused-labels:
-    // no-useless-call:
-    // no-useless-concat:
-    // no-useless-escape:
-    // no-void:
-    // no-warning-comments:
-    // no-with:
-    // radix:
-    // vars-on-top:
-    // wrap-iife:
+    'no-script-url': 'error',
+    'no-self-assign': 'error',
+    'no-self-compare': 'error',
+    'no-sequences': 'error',
+    'no-throw-literal': 'error',
+    'no-unmodified-loop-condition': 'error',
+    'no-unused-expressions': 'error',
+    'no-unused-labels': 'error',
+    'no-useless-call': 'error',
+    'no-useless-concat': 'error',
+    'no-useless-escape': 'error',
+    'no-void': 'error',
+    'no-warning-comments': 'error',
+    'no-with': 'error',
+    radix: 'error',
+    'vars-on-top': 'error',
+    'wrap-iife': 'error',
     yoda: 'error',
 
     // Strict mode
